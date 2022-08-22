@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Advent.Final.Service.Controllers
+namespace Advent.Final.Services.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -22,7 +22,6 @@ namespace Advent.Final.Service.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult<List<User>>> Get()
         {
             var response = await _core.GetAll();
@@ -38,12 +37,11 @@ namespace Advent.Final.Service.Controllers
         }
 
         // PUT api/<UsersController>/5
-        [HttpPut("password/{id}")]
-        [Authorize]
-        public async Task<ActionResult<User>> UpdatePassword(int id, [FromBody] UserPasswordDto request)
-        {
-            var response=await _core.UpdatePassword(id,request);
-            return StatusCode((int)response.StatusHttp, response);
-        }
+        //[HttpPut("password/{id}")]
+        //public async Task<ActionResult<User>> UpdatePassword(int id, [FromBody] UserPasswordDto request)
+        //{
+        //    var response=await _core.UpdatePassword(id,request);
+        //    return StatusCode((int)response.StatusHttp, response);
+        //}
     }
 }

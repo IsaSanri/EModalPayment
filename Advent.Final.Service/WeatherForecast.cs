@@ -1,4 +1,4 @@
-namespace Advent.Final.Service
+namespace Advent.Final.Services
 {
     public class WeatherForecast
     {

@@ -8,12 +8,13 @@ namespace Advent.Final.Entities.Entities
 {
     public class User: Person
     {
-        public int Id { get; set; }
+        public int IdUser { get; set; }
         public string Username { get; set; }
         public string? Password { get; set; }
+        public bool UserState { get; set; }
         public DateTime Created { get; set; }
-        public DateTime? LastLogin { get; set; }
-        public DateTime? LastLogout { get; set; }
+        public DateTime? LastLogIn { get; set; }
+        public DateTime? LastLogOut { get; set; }
         public string Token { get; set; }
         public string Status { get; set; }
     }

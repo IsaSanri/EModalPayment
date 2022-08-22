@@ -50,8 +50,9 @@ namespace Advent.Final.Core.V1
             {
                 User newUser = _mapper.Map<User>(userCreate);
                 newUser.Created = DateTime.Now;
+                newUser.Password = EncryptCore.Encrypt_SHA256(newUser.Username, newUser.Password);
                 newUser.Status = "Creado";
-                newUser.Token = _stripe.CreateCustomer($"{userCreate.FirstName} {userCreate.LastName}", userCreate.Email);
+                newUser.Token = _stripe.CreateCustomer($"{userCreate.Name} {userCreate.LastName}", userCreate.Email);
                 var response = await _context.AddAsync(newUser);
                 return new ResponseService<User>(false, response == null ? "No records found" : "User created", HttpStatusCode.OK, response.Item1);
             }
@@ -61,20 +62,20 @@ namespace Advent.Final.Core.V1
             }
         }
 
-        public async Task<ResponseService<User>> UpdatePassword(int userId,UserPasswordDto request)
-        {
-            try
-            {
-                User user = await _context.GetByIdAsync(userId);
-                user.Password = request.Password;
-                var response = await _context.UpdateAsync(user);
-                return new ResponseService<User>(false,"Password updated",HttpStatusCode.OK, response.Item1);
-            }
-            catch (Exception ex)
-            {
-                return _errorHandler.Error(ex, "UpdatePassword", new User());
-            }
-        }
+        //public async Task<ResponseService<User>> UpdatePassword(int userId,UserPasswordDto request)
+        //{
+        //    try
+        //    {
+        //        User user = await _context.GetByIdAsync(userId);
+        //        user.Password = request.Password;
+        //        var response = await _context.UpdateAsync(user);
+        //        return new ResponseService<User>(false,"Password updated",HttpStatusCode.OK, response.Item1);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return _errorHandler.Error(ex, "UpdatePassword", new User());
+        //    }
+        //}
 
         internal async Task<string> GetCustomerTokenById(int userId)
         {
@@ -89,32 +90,32 @@ namespace Advent.Final.Core.V1
             string passwordAttempt = EncryptCore.Encrypt_SHA256(username, password);
             if(passwordAttempt == users.FirstOrDefault().Password)
             {
-                users.FirstOrDefault().LastLogin=DateTime.Now;
+                users.FirstOrDefault().LastLogIn=DateTime.Now;
                 await _context.UpdateAsync(users.FirstOrDefault());
-                return new(users.FirstOrDefault().Id, true);
+                return new(users.FirstOrDefault().IdUser, true);
             }
             else { return new(-1, false); }
         }
 
-        public async Task<bool> SetPassword(string username, string password)
-        {
-            var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
-            if (users.Count == 0) { return false; }
-            users.FirstOrDefault().Password = EncryptCore.Encrypt_SHA256(username, password);
-            users.FirstOrDefault().Status = "Activo";
-            await _context.UpdateAsync(users.FirstOrDefault());
-            return true;
-        }
+        //public async Task<bool> SetPassword(string username, string password)
+        //{
+        //    var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
+        //    if (users.Count == 0) { return false; }
+        //    users.FirstOrDefault().Password = EncryptCore.Encrypt_SHA256(username, password);
+        //    users.FirstOrDefault().Status = "Activo";
+        //    await _context.UpdateAsync(users.FirstOrDefault());
+        //    return true;
+        //}
 
-        public async Task<bool> ChangePassword(string username, string password, string newPassword)
-        {
-            var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
-            if (users.Count == 0) { return false; }
-            string passwordAttempt = EncryptCore.Encrypt_SHA256(username, password);
-            if (passwordAttempt != users.FirstOrDefault().Password){ return false; }
-            users.FirstOrDefault().Password=EncryptCore.Encrypt_SHA256(username, newPassword);
-            await _context.UpdateAsync(users.FirstOrDefault());
-            return true;
-        }
+        //public async Task<bool> ChangePassword(string username, string password, string newPassword)
+        //{
+        //    var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
+        //    if (users.Count == 0) { return false; }
+        //    string passwordAttempt = EncryptCore.Encrypt_SHA256(username, password);
+        //    if (passwordAttempt != users.FirstOrDefault().Password){ return false; }
+        //    users.FirstOrDefault().Password=EncryptCore.Encrypt_SHA256(username, newPassword);
+        //    await _context.UpdateAsync(users.FirstOrDefault());
+        //    return true;
+        //}
     }
 }

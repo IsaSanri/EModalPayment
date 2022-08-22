@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Advent.Final.Service.Controllers
+namespace Advent.Final.Services.Controllers
 {
     [ApiController]
     [Route("[controller]")]

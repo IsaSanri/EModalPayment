@@ -11,7 +11,7 @@ namespace Advent.Final.DataAccess.Context
     public class SqlServerContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-
+        
         private readonly string _connectionString = string.Empty;
 
         public SqlServerContext(DbContextOptions<SqlServerContext> options) : base(options) { }

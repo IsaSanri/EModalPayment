@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Advent.Final.Service": {
+    "Advent.Final.Services": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

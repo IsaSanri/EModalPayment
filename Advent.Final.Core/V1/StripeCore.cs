@@ -12,7 +12,7 @@ namespace Advent.Final.Core.V1
     {
         public StripeCore()
         {
-            StripeConfiguration.ApiKey = "sk_test_51LLgOpHNoFBenqbdMnR7j1MfKUPJ9e1mnU6TQlSPHsw78Jj78zNhblpkBR1cmlkBnUN3egLwwcvVxBquTXA4AKOI00HTBT5Tmp";
+            StripeConfiguration.ApiKey = "sk_test_51LYAnGD7cFATkEYBXiFQlrwgL8e4OC1mhxGN6llPTJkv0SBgVC9nGbo345hLSTEiTHwdjZZOCHCDPn7CL9jlmXRs00IjFLWwSV";
         }
 
         public PaymentMethod CreatePaymentMethod(CardDto card,string idCustomer)
