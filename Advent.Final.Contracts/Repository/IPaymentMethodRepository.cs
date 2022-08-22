@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Advent.Final.Contracts.Repository
 {
-    public interface IPaymentMethodRepository: IGenericActionDbAddUpdate<PaymentMethod>, IGenericActionDbQuery<PaymentMethod>
+    public interface IPaymentMethodRepository : IGenericActionDbAddUpdate<PaymentMethod>, IGenericActionDbQuery<PaymentMethod>
     {
     }
 }

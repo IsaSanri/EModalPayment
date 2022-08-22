@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Advent.Final.Contracts.Repository
 {
-    public interface IUserRepository: IGenericActionDbAddUpdate<User>, IGenericActionDbQuery<User>
+    public interface IUserRepository : IGenericActionDbAddUpdate<User>, IGenericActionDbQuery<User>
     {
     }
 }

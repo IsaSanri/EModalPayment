@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Advent.Final.Contracts.Repository
 {
-    public interface IBookingDetailRepository: IGenericActionDbAddUpdate<BookingDetail>, IGenericActionDbQuery<BookingDetail>
+    public interface IBookingDetailRepository : IGenericActionDbAddUpdate<BookingDetail>, IGenericActionDbQuery<BookingDetail>
     {
     }
 }
