@@ -28,28 +28,8 @@ namespace Advent.Final.Core.V1
             _userCore = new(userContext, userLogger, mapper);
             _config = configuration;
         }
-        //public async Task<ResponseService<bool>> AddPassword(UserLoginRequestDto request) 
-        //{
-        //    if (await _userCore.SetPassword(request.Username, request.Password))
-        //    {
-        //        return new ResponseService<bool>(false, "Password added", HttpStatusCode.OK, true);
-        //    }
-        //    else
-        //    {
-        //        return new ResponseService<bool>(true, "No password", HttpStatusCode.BadRequest, false);
-        //    }
-        //}
-        //public async Task<ResponseService<bool>> ResetPassword(UserChangePasswordDto request) 
-        //{
-        //    if (await _userCore.ChangePassword(request.Username, request.Password,request.NewPassword))
-        //    {
-        //        return new ResponseService<bool>(false, "Password changed", HttpStatusCode.OK, true);
-        //    }
-        //    else
-        //    {
-        //        return new ResponseService<bool>(true, "No password", HttpStatusCode.BadRequest, false);
-        //    }
-        //}
+           }
+        
 
         public async Task<ResponseService<UserLoginDto>> AuthUser(UserLoginRequestDto request)
         {
