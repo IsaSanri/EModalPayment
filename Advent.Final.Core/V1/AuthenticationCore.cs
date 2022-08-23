@@ -28,7 +28,7 @@ namespace Advent.Final.Core.V1
             _userCore = new(userContext, userLogger, mapper);
             _config = configuration;
         }
-        
+
 
         public async Task<ResponseService<UserLoginDto>> AuthUser(UserLoginRequestDto request)
         {
@@ -49,6 +49,7 @@ namespace Advent.Final.Core.V1
                 return new ResponseService<UserLoginDto>(true, "Login unsuccessful", HttpStatusCode.Forbidden, new());
             }
         }
+
 
         private string GenerarTokenJWT(string username)
         {

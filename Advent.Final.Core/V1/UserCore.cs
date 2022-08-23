@@ -5,12 +5,8 @@ using Advent.Final.Entities.Entities;
 using Advent.Final.Entities.Utils;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Advent.Final.Core.V1
 {
@@ -23,7 +19,7 @@ namespace Advent.Final.Core.V1
         private readonly StripeCore _stripe;
 
 
-        public UserCore(IUserRepository context,ILogger<User> logger, IMapper mapper)
+        public UserCore(IUserRepository context, ILogger<User> logger, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -45,12 +41,12 @@ namespace Advent.Final.Core.V1
             }
         }
 
-        public async Task<ResponseService<User>> CreateUser(UserCreateDto userCreate) {
+        public async Task<ResponseService<User>> CreateUser(UserCreateDto userCreate)
+        {
             try
             {
                 User newUser = _mapper.Map<User>(userCreate);
                 newUser.Created = DateTime.Now;
-                newUser.Password = EncryptCore.Encrypt_SHA256(newUser.Username, newUser.Password);
                 newUser.Status = "Creado";
                 newUser.Token = _stripe.CreateCustomer($"{userCreate.Name} {userCreate.LastName}", userCreate.Email);
                 var response = await _context.AddAsync(newUser);
@@ -62,28 +58,60 @@ namespace Advent.Final.Core.V1
             }
         }
 
-     
+        public async Task<ResponseService<User>> UpdatePassword(int userId, UserPasswordDto request)
+        {
+            try
+            {
+                User user = await _context.GetByIdAsync(userId);
+                user.Password = request.Password;
+                var response = await _context.UpdateAsync(user);
+                return new ResponseService<User>(false, "Password updated", HttpStatusCode.OK, response.Item1);
+            }
+            catch (Exception ex)
+            {
+                return _errorHandler.Error(ex, "UpdatePassword", new User());
+            }
+        }
 
         internal async Task<string> GetCustomerTokenById(int userId)
         {
-            var result= await _context.GetByIdAsync(userId);
+            var result = await _context.GetByIdAsync(userId);
             return result.Token;
         }
 
-        public async Task<Tuple<int,bool>> AuthUser(string username, string password)
+        public async Task<Tuple<int, bool>> AuthUser(string username, string password)
         {
             var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
-            if(users.Count == 0) { return new(-1,false); }
+            if (users.Count == 0) { return new(-1, false); }
             string passwordAttempt = EncryptCore.Encrypt_SHA256(username, password);
-            if(passwordAttempt == users.FirstOrDefault().Password)
+            if (passwordAttempt == users.FirstOrDefault().Password)
             {
-                users.FirstOrDefault().LastLogIn=DateTime.Now;
+                users.FirstOrDefault().LastLogIn = DateTime.Now;
                 await _context.UpdateAsync(users.FirstOrDefault());
                 return new(users.FirstOrDefault().IdUser, true);
             }
             else { return new(-1, false); }
         }
 
-     
+        public async Task<bool> SetPassword(string username, string password)
+        {
+            var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
+            if (users.Count == 0) { return false; }
+            users.FirstOrDefault().Password = EncryptCore.Encrypt_SHA256(username, password);
+            users.FirstOrDefault().Status = "Activo";
+            await _context.UpdateAsync(users.FirstOrDefault());
+            return true;
+        }
+
+        public async Task<bool> ChangePassword(string username, string password, string newPassword)
+        {
+            var users = await _context.GetByFilterAsync(u => u.Username.Equals(username));
+            if (users.Count == 0) { return false; }
+            string passwordAttempt = EncryptCore.Encrypt_SHA256(username, password);
+            if (passwordAttempt != users.FirstOrDefault().Password) { return false; }
+            users.FirstOrDefault().Password = EncryptCore.Encrypt_SHA256(username, newPassword);
+            await _context.UpdateAsync(users.FirstOrDefault());
+            return true;
+        }
     }
 }
