@@ -36,12 +36,6 @@ namespace Advent.Final.Services.Controllers
             return StatusCode((int)response.StatusHttp, response);
         }
 
-        // PUT api/<UsersController>/5
-        //[HttpPut("password/{id}")]
-        //public async Task<ActionResult<User>> UpdatePassword(int id, [FromBody] UserPasswordDto request)
-        //{
-        //    var response=await _core.UpdatePassword(id,request);
-        //    return StatusCode((int)response.StatusHttp, response);
-        //}
+       
     }
 }

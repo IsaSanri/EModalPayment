@@ -18,22 +18,21 @@ using System.Threading.Tasks;
 
 namespace Advent.Final.Core.V1
 {
-    public class AuthtenticationCore
+    public class AuthenticationCore
     {
         private readonly UserCore _userCore;
         private readonly IConfiguration _config;
 
-        public AuthtenticationCore(IUserRepository userContext,ILogger<User> userLogger,IMapper mapper,IConfiguration configuration)
+        public AuthenticationCore(IUserRepository userContext, ILogger<User> userLogger, IMapper mapper, IConfiguration configuration)
         {
             _userCore = new(userContext, userLogger, mapper);
             _config = configuration;
         }
-           }
         
 
         public async Task<ResponseService<UserLoginDto>> AuthUser(UserLoginRequestDto request)
         {
-            var authResponse = await _userCore.AuthUser(request.Username,request.Password);
+            var authResponse = await _userCore.AuthUser(request.Username, request.Password);
             if (authResponse.Item2)
             {
                 var response = new UserLoginDto()
