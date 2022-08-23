@@ -23,7 +23,7 @@ namespace Advent.Final.Services.Controllers
         [HttpPost]
         public async Task<ActionResult<UserLoginDto>> Login([FromBody] UserLoginRequestDto request)
         {
-            var response= await _core.AuthUser(request);
+            var response = await _core.AuthUser(request);
             return StatusCode((int)response.StatusHttp, response);
 
         }

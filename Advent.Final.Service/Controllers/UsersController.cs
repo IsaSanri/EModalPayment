@@ -36,6 +36,6 @@ namespace Advent.Final.Services.Controllers
             return StatusCode((int)response.StatusHttp, response);
         }
 
-       
+
     }
 }

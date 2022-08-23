@@ -1516,3 +1516,226 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2022-08-23 07:57:52.241 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 32.6384ms
 2022-08-23 07:57:52.243 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
 2022-08-23 07:57:52.245 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 46.0204ms
+2022-08-23 08:03:16.397 -05:00 [INF] User profile is available. Using 'C:\Users\ISABELLE SANCHEZ\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-23 08:03:16.725 -05:00 [INF] Now listening on: https://localhost:7232
+2022-08-23 08:03:16.726 -05:00 [INF] Now listening on: http://localhost:5232
+2022-08-23 08:03:16.730 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-23 08:03:16.731 -05:00 [INF] Hosting environment: Development
+2022-08-23 08:03:16.732 -05:00 [INF] Content root path: C:\Users\ISABELLE SANCHEZ\Documents\FrontEnd\AdventFinal\advent-api\Advent.Final.Service
+2022-08-23 08:03:17.022 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/index.html - -
+2022-08-23 08:03:17.285 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - -
+2022-08-23 08:03:17.293 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/index.html - - - 200 - text/html;charset=utf-8 272.5060ms
+2022-08-23 08:03:17.293 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 6.7998ms
+2022-08-23 08:03:17.372 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - -
+2022-08-23 08:03:17.508 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.7884ms
+2022-08-23 08:03:28.308 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authentication - -
+2022-08-23 08:03:28.329 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:03:28.332 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authentication - - - 204 - - 24.2359ms
+2022-08-23 08:03:28.334 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 49
+2022-08-23 08:03:28.337 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:03:28.404 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:03:28.428 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:03:30.147 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:03:30.168 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 1732.0753ms
+2022-08-23 08:03:30.177 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:03:30.180 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 1846.0786ms
+2022-08-23 08:07:13.780 -05:00 [INF] User profile is available. Using 'C:\Users\ISABELLE SANCHEZ\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-23 08:07:14.107 -05:00 [INF] Now listening on: https://localhost:7232
+2022-08-23 08:07:14.110 -05:00 [INF] Now listening on: http://localhost:5232
+2022-08-23 08:07:14.113 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-23 08:07:14.114 -05:00 [INF] Hosting environment: Development
+2022-08-23 08:07:14.115 -05:00 [INF] Content root path: C:\Users\ISABELLE SANCHEZ\Documents\FrontEnd\AdventFinal\advent-api\Advent.Final.Service
+2022-08-23 08:07:14.835 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/index.html - -
+2022-08-23 08:07:15.189 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - -
+2022-08-23 08:07:15.199 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 8.8619ms
+2022-08-23 08:07:15.199 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/index.html - - - 200 - text/html;charset=utf-8 370.7067ms
+2022-08-23 08:07:15.277 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - -
+2022-08-23 08:07:15.402 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.8805ms
+2022-08-23 08:07:30.860 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 53
+2022-08-23 08:07:30.890 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:07:30.967 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:07:30.994 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:07:32.909 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:07:32.940 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 1929.4911ms
+2022-08-23 08:07:32.952 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:07:32.958 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 53 - 403 - application/json;+charset=utf-8 2097.2583ms
+2022-08-23 08:07:45.033 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 48
+2022-08-23 08:07:45.038 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:07:45.040 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:07:45.041 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:07:45.373 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:07:45.378 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 313.6992ms
+2022-08-23 08:07:45.388 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:07:45.396 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 48 - 200 - application/json;+charset=utf-8 362.7192ms
+2022-08-23 08:08:04.654 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 46
+2022-08-23 08:08:04.655 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:08:04.665 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:08:04.669 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:08:04.735 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:08:04.740 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 48.911ms
+2022-08-23 08:08:04.744 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:08:04.745 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 46 - 403 - application/json;+charset=utf-8 92.1540ms
+2022-08-23 08:08:42.493 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 49
+2022-08-23 08:08:42.531 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:08:42.533 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:08:42.567 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:08:42.584 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:08:42.610 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 28.336ms
+2022-08-23 08:08:42.616 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:08:42.624 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 131.6693ms
+2022-08-23 08:08:52.522 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 52
+2022-08-23 08:08:52.524 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:08:52.525 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:08:52.526 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:08:52.544 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:08:52.547 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 4.7014ms
+2022-08-23 08:08:52.563 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:08:52.569 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 52 - 403 - application/json;+charset=utf-8 46.6442ms
+2022-08-23 08:15:35.404 -05:00 [INF] User profile is available. Using 'C:\Users\ISABELLE SANCHEZ\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-23 08:15:35.751 -05:00 [INF] Now listening on: https://localhost:7232
+2022-08-23 08:15:35.752 -05:00 [INF] Now listening on: http://localhost:5232
+2022-08-23 08:15:35.765 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-23 08:15:35.766 -05:00 [INF] Hosting environment: Development
+2022-08-23 08:15:35.767 -05:00 [INF] Content root path: C:\Users\ISABELLE SANCHEZ\Documents\FrontEnd\AdventFinal\advent-api\Advent.Final.Service
+2022-08-23 08:15:36.100 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/index.html - -
+2022-08-23 08:15:36.445 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - -
+2022-08-23 08:15:36.455 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/index.html - - - 200 - text/html;charset=utf-8 358.2818ms
+2022-08-23 08:15:36.455 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 8.5056ms
+2022-08-23 08:15:36.554 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - -
+2022-08-23 08:15:36.681 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.8513ms
+2022-08-23 08:16:06.569 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7232/api/Users application/json 287
+2022-08-23 08:16:06.862 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '21/08/2022 10:15:54 p. m.', Current time: '23/08/2022 1:16:06 p. m.'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-08-23 08:16:06.919 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '21/08/2022 10:15:54 p. m.', Current time: '23/08/2022 1:16:06 p. m.'.
+2022-08-23 08:16:06.927 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.UsersController.CreateUser (Advent.Final.Services)'
+2022-08-23 08:16:06.967 -05:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.Entities.User]] CreateUser(Advent.Final.Entities.DTOs.UserCreateDto) on controller Advent.Final.Services.Controllers.UsersController (Advent.Final.Services).
+2022-08-23 08:16:09.583 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.Entities.User, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:16:09.620 -05:00 [INF] Executed action Advent.Final.Services.Controllers.UsersController.CreateUser (Advent.Final.Services) in 2641.756ms
+2022-08-23 08:16:09.631 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.UsersController.CreateUser (Advent.Final.Services)'
+2022-08-23 08:16:09.634 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7232/api/Users application/json 287 - 200 - application/json;+charset=utf-8 3064.9422ms
+2022-08-23 08:19:12.939 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authentication - -
+2022-08-23 08:19:12.948 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:19:12.951 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authentication - - - 204 - - 13.3281ms
+2022-08-23 08:19:12.952 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 49
+2022-08-23 08:19:12.954 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:19:12.956 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:19:12.961 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:19:13.466 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:19:13.470 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 502.9651ms
+2022-08-23 08:19:13.473 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:19:13.475 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 522.8111ms
+2022-08-23 08:19:26.488 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7232/api/Authentication application/json 51
+2022-08-23 08:19:26.492 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:19:26.493 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:19:26.619 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:19:26.622 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 125.4126ms
+2022-08-23 08:19:26.627 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:19:26.629 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7232/api/Authentication application/json 51 - 200 - application/json;+charset=utf-8 140.7407ms
+2022-08-23 08:21:07.482 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authentication - -
+2022-08-23 08:21:07.484 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:21:07.487 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authentication - - - 204 - - 5.6837ms
+2022-08-23 08:21:07.493 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 49
+2022-08-23 08:21:07.495 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:21:07.495 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:21:07.498 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:21:07.502 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:21:07.503 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 2.2862ms
+2022-08-23 08:21:07.507 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:21:07.512 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 18.9866ms
+2022-08-23 08:22:50.495 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authtentication - -
+2022-08-23 08:22:50.505 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:22:50.507 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authtentication - - - 204 - - 12.0635ms
+2022-08-23 08:22:50.509 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authtentication application/json 49
+2022-08-23 08:22:50.509 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:22:50.510 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authtentication application/json 49 - 404 0 - 1.5174ms
+2022-08-23 08:24:35.212 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authtentication - -
+2022-08-23 08:24:35.214 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:24:35.216 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authtentication - - - 204 - - 4.5838ms
+2022-08-23 08:24:35.218 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authtentication application/json 49
+2022-08-23 08:24:35.224 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:24:35.225 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authtentication application/json 49 - 404 0 - 7.1744ms
+2022-08-23 08:24:40.514 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authentication - -
+2022-08-23 08:24:40.518 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:24:40.522 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authentication - - - 204 - - 8.7379ms
+2022-08-23 08:24:40.524 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 49
+2022-08-23 08:24:40.525 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:24:40.525 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:24:40.530 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:24:40.534 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:24:40.535 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 2.6399ms
+2022-08-23 08:24:40.536 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:24:40.538 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 14.3386ms
+2022-08-23 08:27:29.429 -05:00 [INF] User profile is available. Using 'C:\Users\ISABELLE SANCHEZ\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-23 08:27:29.789 -05:00 [INF] Now listening on: https://localhost:7232
+2022-08-23 08:27:29.790 -05:00 [INF] Now listening on: http://localhost:5232
+2022-08-23 08:27:29.793 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-23 08:27:29.794 -05:00 [INF] Hosting environment: Development
+2022-08-23 08:27:29.795 -05:00 [INF] Content root path: C:\Users\ISABELLE SANCHEZ\Documents\FrontEnd\AdventFinal\advent-api\Advent.Final.Service
+2022-08-23 08:27:30.395 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/index.html - -
+2022-08-23 08:27:30.770 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - -
+2022-08-23 08:27:30.783 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/index.html - - - 200 - text/html;charset=utf-8 391.4044ms
+2022-08-23 08:27:30.817 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 47.1231ms
+2022-08-23 08:27:30.879 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - -
+2022-08-23 08:27:31.044 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.5992ms
+2022-08-23 08:27:32.198 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7232/api/Users application/json 287
+2022-08-23 08:27:32.494 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '21/08/2022 10:15:54 p. m.', Current time: '23/08/2022 1:27:32 p. m.'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-08-23 08:27:32.535 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '21/08/2022 10:15:54 p. m.', Current time: '23/08/2022 1:27:32 p. m.'.
+2022-08-23 08:27:32.542 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.UsersController.CreateUser (Advent.Final.Services)'
+2022-08-23 08:27:32.573 -05:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.Entities.User]] CreateUser(Advent.Final.Entities.DTOs.UserCreateDto) on controller Advent.Final.Services.Controllers.UsersController (Advent.Final.Services).
+2022-08-23 08:27:35.235 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.Entities.User, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:27:35.272 -05:00 [INF] Executed action Advent.Final.Services.Controllers.UsersController.CreateUser (Advent.Final.Services) in 2686.2755ms
+2022-08-23 08:27:35.280 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.UsersController.CreateUser (Advent.Final.Services)'
+2022-08-23 08:27:35.282 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7232/api/Users application/json 287 - 200 - application/json;+charset=utf-8 3084.5657ms
+2022-08-23 08:28:10.384 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7232/api/Authentication application/json 51
+2022-08-23 08:28:10.391 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:28:10.398 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:28:10.933 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:28:10.940 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 536.3078ms
+2022-08-23 08:28:10.944 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:28:10.947 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7232/api/Authentication application/json 51 - 200 - application/json;+charset=utf-8 562.8267ms
+2022-08-23 08:28:23.259 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 48
+2022-08-23 08:28:23.264 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:28:23.266 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:28:23.267 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:28:23.306 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:28:23.316 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 31.9125ms
+2022-08-23 08:28:23.324 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:28:23.337 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 48 - 200 - application/json;+charset=utf-8 77.5947ms
+2022-08-23 08:31:08.407 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7232/api/Authentication - -
+2022-08-23 08:31:08.412 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:31:08.413 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7232/api/Authentication - - - 204 - - 5.6951ms
+2022-08-23 08:31:08.414 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7232/api/Authentication application/json 49
+2022-08-23 08:31:08.415 -05:00 [INF] CORS policy execution successful.
+2022-08-23 08:31:08.415 -05:00 [INF] Executing endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:31:08.416 -05:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Advent.Final.Entities.DTOs.UserLoginDto]] Login(Advent.Final.Entities.DTOs.UserLoginRequestDto) on controller Advent.Final.Services.Controllers.AuthenticationController (Advent.Final.Services).
+2022-08-23 08:31:08.420 -05:00 [INF] Executing ObjectResult, writing value of type 'Advent.Final.Entities.Utils.ResponseService`1[[Advent.Final.Entities.DTOs.UserLoginDto, Advent.Final.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-23 08:31:08.421 -05:00 [INF] Executed action Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services) in 2.5453ms
+2022-08-23 08:31:08.423 -05:00 [INF] Executed endpoint 'Advent.Final.Services.Controllers.AuthenticationController.Login (Advent.Final.Services)'
+2022-08-23 08:31:08.424 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7232/api/Authentication application/json 49 - 403 - application/json;+charset=utf-8 10.2771ms
+2022-08-23 09:15:53.892 -05:00 [INF] User profile is available. Using 'C:\Users\ISABELLE SANCHEZ\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-23 09:15:54.341 -05:00 [INF] Now listening on: https://localhost:7232
+2022-08-23 09:15:54.343 -05:00 [INF] Now listening on: http://localhost:5232
+2022-08-23 09:15:54.346 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-23 09:15:54.348 -05:00 [INF] Hosting environment: Development
+2022-08-23 09:15:54.350 -05:00 [INF] Content root path: C:\Users\ISABELLE SANCHEZ\Documents\FrontEnd\AdventFinal\advent-api\Advent.Final.Service
+2022-08-23 09:15:54.947 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/index.html - -
+2022-08-23 09:15:55.195 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - -
+2022-08-23 09:15:55.203 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/index.html - - - 200 - text/html;charset=utf-8 261.8195ms
+2022-08-23 09:15:55.204 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 7.7515ms
+2022-08-23 09:15:55.283 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - -
+2022-08-23 09:15:55.393 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7232/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.2629ms
